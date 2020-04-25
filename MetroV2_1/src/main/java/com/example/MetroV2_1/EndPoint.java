@@ -41,33 +41,49 @@ public class EndPoint {
 	
 	@Autowired
 	Icompras objICompra;
+	@Autowired
 	Iusuario objIusuario;
+	@Autowired
 	ILineaMetro objIMetro;
 	
 	@PayloadRoot(localPart="CompraRequest", namespace="http://www.uvMetro.me/MetroV2_1")
 	@ResponsePayload
 	public CompraResponse getCompraExitosa(@RequestPayload CompraRequest peticion) {
 		CompraResponse respuesta=new CompraResponse();
-		respuesta.setCompra("Compra = "+peticion.getCompra());
-		respuesta.setUsuario("Usuario = "+peticion.getUsuario());
-		respuesta.setFecha("Fecha = "+peticion.getFecha());
-		respuesta.setOrigen("Origen = "+peticion.getOrigen());
-		respuesta.setNombreLinea("Linea = "+peticion.getNombreLinea());
-		respuesta.setTypeVagon("Vagon = "+peticion.getTypeVagon());
-		respuesta.setPrecio("Precio = "+peticion.getPrecio());
-		respuesta.setTypePago("Tipo de pago = "+peticion.getTypePago());
+		Usuario objUsuario=new Usuario();
+		LineaMetro objMetro=new LineaMetro();
 		
-		Compras objCompra= new Compras();
-		objCompra.setCompra(peticion.getCompra());
-		objCompra.setUsuario(peticion.getUsuario());
-		objCompra.setFecha(peticion.getFecha());
-		objCompra.setOrigen(peticion.getOrigen());
-		objCompra.setNombreLinea(peticion.getNombreLinea());
-		objCompra.setTypeVagon(peticion.getTypeVagon());
-		objCompra.setPrecio(peticion.getPrecio());
-		objCompra.setTypePago(peticion.getTypePago());
+		objUsuario=objIusuario.findByUser(peticion.getUsuario());
+		objMetro=objIMetro.findByNombreLinea(peticion.getNombreLinea());
 		
-		objICompra.save(objCompra);
+		if(objUsuario.equals(null)) {
+			respuesta.setCompra("El Usuario ingresado no existe por favor registrate");
+		}else if(objMetro.equals(null)) {
+			respuesta.setCompra("La linea de metro ingresada no existe por favor elije otra");
+		}else {
+			respuesta.setCompra("Compra = "+peticion.getCompra());
+			respuesta.setUsuario("Usuario = "+peticion.getUsuario());
+			respuesta.setFecha("Fecha = "+peticion.getFecha());
+			respuesta.setOrigen("Origen = "+peticion.getOrigen());
+			respuesta.setNombreLinea("Linea = "+peticion.getNombreLinea());
+			respuesta.setTypeVagon("Vagon = "+peticion.getTypeVagon());
+			respuesta.setPrecio("Precio = "+peticion.getPrecio());
+			respuesta.setTypePago("Tipo de pago = "+peticion.getTypePago());
+			
+			Compras objCompra= new Compras();
+			objCompra.setCompra(peticion.getCompra());
+			objCompra.setUsuario(peticion.getUsuario());
+			objCompra.setFecha(peticion.getFecha());
+			objCompra.setOrigen(peticion.getOrigen());
+			objCompra.setNombreLinea(peticion.getNombreLinea());
+			objCompra.setTypeVagon(peticion.getTypeVagon());
+			objCompra.setPrecio(peticion.getPrecio());
+			objCompra.setTypePago(peticion.getTypePago());
+			
+			objICompra.save(objCompra);
+		}
+		
+		
 		
 		return respuesta;
 	}
@@ -82,18 +98,10 @@ public class EndPoint {
 		if(objCompra == null) {
 			respuestaActualizar.setRespuesta("La compra no existe "+peticion.getCompra());
 		}else {
-			objCompra.setCompra(peticion.getCompra());
-			objCompra.setUsuario(peticion.getUsuario());
-			objCompra.setFecha(peticion.getFecha());
-			objCompra.setOrigen(peticion.getOrigen());
-			objCompra.setNombreLinea(peticion.getNombreLinea());
-			objCompra.setTypeVagon(peticion.getTypeVagon());
-			objCompra.setPrecio(peticion.getPrecio());
-			objCompra.setTypePago(peticion.getTypePago());
 			
-			objICompra.updateCompra(peticion.getCompra(), peticion.getFecha(), peticion.getNombreLinea(), peticion.getOrigen(), peticion.getPrecio(), peticion.getTypePago(), peticion.getTypeVagon(), peticion.getUsuario());
+			objICompra.updateCompra(peticion.getFecha(), peticion.getNombreLinea(), peticion.getOrigen(), peticion.getPrecio(), peticion.getTypePago(), peticion.getTypeVagon(), peticion.getUsuario(),peticion.getCompra());
 			
-			respuestaActualizar.setRespuesta("Compra con id: "+peticion.getCompra()+" fue Actualizada con exito");
+			respuestaActualizar.setRespuesta("Compra con Nombre: "+peticion.getCompra()+" fue Actualizada con exito");
 		}	
 		
 		return respuestaActualizar;
@@ -151,7 +159,15 @@ public class EndPoint {
 	@ResponsePayload
 	public ActualizarUsuarioResponse getCompraExitosa(@RequestPayload ActualizarUsuarioRequest peticion) {
 		ActualizarUsuarioResponse respuesta=new ActualizarUsuarioResponse();
-		respuesta.setRespuesta("Usuario: "+peticion.getNombreUsuario()+" Actualizado Correctamente");
+		Usuario objUsuario=new Usuario();
+		objUsuario=objIusuario.findByUser(peticion.getNombreUsuario());
+		if(objUsuario.equals(null)) {
+			respuesta.setRespuesta("Usuario incorrecto o inexistente por favor corrijelo");
+		}else {
+			objIusuario.updateUser(peticion.getCorreo(), peticion.getFechaDeNacimiento(), peticion.getMetodoPago(), peticion.getNumeroTarjeta(), peticion.getNombreUsuario());
+			respuesta.setRespuesta("Usuario: "+peticion.getNombreUsuario()+" Actualizado Correctamente");
+		}
+		
 		return respuesta;
 	}
 	
@@ -159,9 +175,16 @@ public class EndPoint {
 	@ResponsePayload
 	public EliminarUsuarioResponse getCompraExitosa(@RequestPayload EliminarUsuarioRequest peticion) {
 		EliminarUsuarioResponse respuesta=new EliminarUsuarioResponse();
-		objIusuario.deletebyNombre(peticion.getIdUsuario());
+		Usuario objUsuario=new Usuario();
 		
-		respuesta.setRespuesta("Usuario: "+peticion.getIdUsuario()+" eliminado correctamente");
+		objUsuario=objIusuario.findByUser(peticion.getIdUsuario());
+		if(objUsuario.equals(null)) {
+			respuesta.setRespuesta("Usuario incorrecto o inexistente por favor corrijelo");
+		}else {
+			objIusuario.deletebyNombre(peticion.getIdUsuario());
+			respuesta.setRespuesta("Usuario: "+peticion.getIdUsuario()+" eliminado correctamente");
+		}
+		
 		return respuesta;
 	}
 	
@@ -187,7 +210,18 @@ public class EndPoint {
 	@ResponsePayload
 	public ActualizarLineaMetroResponse getCompraExitosa(@RequestPayload ActualizarLineaMetroRequest peticion) {
 		ActualizarLineaMetroResponse respuesta=new ActualizarLineaMetroResponse();
-		respuesta.setRespuesta("Linea del metro: "+peticion.getNombreLinea()+" actualizada correctamente");
+		LineaMetro objMetro=new LineaMetro();
+		
+		objMetro=objIMetro.findByNombreLinea(peticion.getNombreLinea());
+		
+		if(objMetro.equals(null)) {
+			respuesta.setRespuesta("Linea del metro no existe o lo ingresaste mal");
+		}else {
+			objIMetro.updateLineaMetro(peticion.getDestino(), peticion.getHorario(), peticion.getOrigen(), peticion.getPrecio(), peticion.getNombreLinea());
+			respuesta.setRespuesta("Linea del metro: "+peticion.getNombreLinea()+" actualizada correctamente");
+		}
+		
+		
 		return respuesta;
 	}
 	
@@ -196,9 +230,16 @@ public class EndPoint {
 	public EliminarLineaMetroResponse getCompraExitosa(@RequestPayload EliminarLineaMetroRequest peticion) {
 		EliminarLineaMetroResponse respuesta=new EliminarLineaMetroResponse();
 		
-		objIMetro.deletebyNombre(peticion.getNombreLinea());
+		LineaMetro objMetro=new LineaMetro();
+		objMetro=objIMetro.findByNombreLinea(peticion.getNombreLinea());
 		
-		respuesta.setRespuesta("Linea del metro: "+peticion.getNombreLinea()+" eliminada correctamente");
+		if(objMetro.equals(null)) {
+			respuesta.setRespuesta("Linea del metro no existe o lo ingresaste mal");
+		}else {
+			objIMetro.deletebyNombre(peticion.getNombreLinea());
+			respuesta.setRespuesta("Linea del metro: "+peticion.getNombreLinea()+" eliminada correctamente");
+		}
+		
 		return respuesta;
 	}
 	
@@ -209,11 +250,16 @@ public class EndPoint {
 		LineaMetro objMetro=new LineaMetro();
 		objMetro=objIMetro.findByNombreLinea(peticion.getNombreLinea());
 		
-		respuesta.setNombreLinea("Nombre Linea: "+peticion.getNombreLinea());
-		respuesta.setHorario("Horario: "+objMetro.getHorario());
-		respuesta.setOrigen("Origen: "+objMetro.getOrigen());
-		respuesta.setDestino("Destino: "+objMetro.getDestino());
-		respuesta.setPrecio("Precio: "+objMetro.getPrecio());
+		if(objMetro.equals(null)) {
+			respuesta.setNombreLinea("Linea del metro no existe o lo ingresaste mal");
+		}else {
+			respuesta.setNombreLinea("Nombre Linea: "+peticion.getNombreLinea());
+			respuesta.setHorario("Horario: "+objMetro.getHorario());
+			respuesta.setOrigen("Origen: "+objMetro.getOrigen());
+			respuesta.setDestino("Destino: "+objMetro.getDestino());
+			respuesta.setPrecio("Precio: "+objMetro.getPrecio());
+		}
+		
 		return respuesta;
 	}
 
