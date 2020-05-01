@@ -56,9 +56,10 @@ public class EndPoint {
 		objUsuario=objIusuario.findByUser(peticion.getUsuario());
 		objMetro=objIMetro.findByNombreLinea(peticion.getNombreLinea());
 		
-		if(objUsuario.equals(null)) {
+		
+		if(objUsuario== null) {
 			respuesta.setCompra("El Usuario ingresado no existe por favor registrate");
-		}else if(objMetro.equals(null)) {
+		}else if(objMetro==null) {
 			respuesta.setCompra("La linea de metro ingresada no existe por favor elije otra");
 		}else {
 			respuesta.setCompra("Compra = "+peticion.getCompra());
@@ -206,7 +207,7 @@ public class EndPoint {
 		return respuesta;
 	}
 	
-	@PayloadRoot(localPart="ActualizarLineaMetroResponse", namespace="http://www.uvMetro.me/MetroV2_1")
+	@PayloadRoot(localPart="ActualizarLineaMetroRequest", namespace="http://www.uvMetro.me/MetroV2_1")
 	@ResponsePayload
 	public ActualizarLineaMetroResponse getCompraExitosa(@RequestPayload ActualizarLineaMetroRequest peticion) {
 		ActualizarLineaMetroResponse respuesta=new ActualizarLineaMetroResponse();
@@ -230,15 +231,15 @@ public class EndPoint {
 	public EliminarLineaMetroResponse getCompraExitosa(@RequestPayload EliminarLineaMetroRequest peticion) {
 		EliminarLineaMetroResponse respuesta=new EliminarLineaMetroResponse();
 		
-		LineaMetro objMetro=new LineaMetro();
+		/*LineaMetro objMetro=new LineaMetro();
 		objMetro=objIMetro.findByNombreLinea(peticion.getNombreLinea());
 		
 		if(objMetro.equals(null)) {
 			respuesta.setRespuesta("Linea del metro no existe o lo ingresaste mal");
-		}else {
+		}else {*/
 			objIMetro.deletebyNombre(peticion.getNombreLinea());
 			respuesta.setRespuesta("Linea del metro: "+peticion.getNombreLinea()+" eliminada correctamente");
-		}
+		//}
 		
 		return respuesta;
 	}

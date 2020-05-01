@@ -11,11 +11,12 @@ import com.example.MetroV2_1.DTO.LineaMetro;
 @Transactional
 public interface ILineaMetro extends CrudRepository<LineaMetro, Integer> {
 	
-	@Query(value="select * from LineaMetro where NombreLinea = :nombreLinea", nativeQuery = true)
+	@Query(value="select * from linea_metro where nombre_linea = :nombreLinea", nativeQuery = true)
 	public LineaMetro findByNombreLinea(String nombreLinea);
 
-	@Query(value="delete * from LineaMetro where NombreLinea = :NombreLinea", nativeQuery = true)
-	public LineaMetro deletebyNombre(String NombreLinea);
+	@Modifying
+	@Query(value="delete from linea_metro where Nombre_Linea = :NombreLinea", nativeQuery = true)
+	public void deletebyNombre(String NombreLinea);
 	
 	@Modifying
 	@Query(value="update LineaMetro set destino=:destino, horario=:horario, origen=:origen, precio=:precio where nombre_linea=:nombreLinea")
