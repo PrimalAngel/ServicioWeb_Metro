@@ -1,0 +1,106 @@
+.forms {
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.48);
+    color: rgba(255, 255, 255, 0.4);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    position: relative;
+}
+
+.forms h3 {
+    margin-top: 0;
+    margin-bottom: 6.6rem;
+    color: #  5d5d5d;
+}
+
+.forms h5 {
+    margin-top: 0;
+    color: #39b54a;
+}
+
+
+.forms input[type="email"],
+.forms input[type="number"],
+.forms input[type="search"],
+.forms input[type="text"],
+.forms input[type="tel"],
+.forms input[type="url"],
+.forms input[type="password"],
+.forms textarea,
+.forms select {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    margin-bottom: .9rem;
+}
+
+.forms input[type="date"]:focus,
+.forms input[type="time"]:focus,
+.forms input[type="email"]:focus,
+.forms input[type="number"]:focus,
+.forms input[type="search"]:focus,
+.forms input[type="text"]:focus,
+.forms input[type="tel"]:focus,
+.forms input[type="url"]:focus,
+.forms input[type="password"]:focus,
+.forms textarea:focus,
+.forms select:focus {
+    color: #FFFFFF;
+    border-bottom: 1px solid #39b54a;
+}
+
+.forms button,
+.forms .btn {
+    margin-top: 3.6rem;
+}
+.forms input::-webkit-input-placeholder,
+.forms select::-webkit-input-placeholder,
+.forms textarea::-webkit-input-placeholder {
+    color: #5d5d5d;
+}
+.forms input::-webkit-input-placeholder{
+  color: #ffffff;
+}
+
+.forms option{
+  background-color: rgb(91, 91, 92);
+}
+
+.forms input:-moz-placeholder,
+.forms select:-moz-placeholder,
+.forms textarea:-moz-placeholder {
+    color: #5d5d5d;    /* Firefox 18- */
+}
+
+.forms input::-moz-placeholder,
+.forms select::-moz-placeholder,
+.forms textarea::-moz-placeholder {
+    color: #5d5d5d;    /* Firefox 19+ */
+}
+
+.forms input:-ms-input-placeholder,
+.forms select:-ms-input-placeholder,
+.forms textarea:-ms-input-placeholder {
+    color: #5d5d5d;
+}
+
+.forms input.placeholder,
+.forms select.placeholder,
+.forms textarea.placeholder {
+    color: #5d5d5d !important;
+}
+
+.contact-primary, .contact-secondary {
+    float: left;
+    padding: 0 5rem;
+}
+
+.contact-primary {
+    width: 95%;
+}
+
+.contact-primary #contactForm {
+    margin-top: -1.5rem;
+}
