@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <title>Metro</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- mobile specific metas
+    ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styleNav.css">
+  <link rel="stylesheet" href="css/styleForm.css">
+
+
+  <!-- script
+    ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <!-- favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+  <!-- header
+    ================================================== -->
+  <header class="s-header">
+
+    <div class="header-logo">
+      <a class="site-logo" href="index.html">
+        <img src="images/logo.png" alt="Homepage">
+      </a>
+    </div>
+
+    <nav class="header-nav">
+
+      <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+      <div class="header-nav__content">
+        <h3>Navigation</h3>
+
+        <ul class="header-nav__list">
+          <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+          <li><a class="smoothscroll" href="#services" title="about">Servicios</a></li>
+          <li><a class="smoothscroll" href="#LineaDeMetro" title="services">Linea de Metro</a></li>
+          <li><a class="smoothscroll" href="#Compras" title="works">Compras</a></li>
+          <li><a class="smoothscroll" href="#Usuarios" title="clients">Usuarios</a></li>
+          <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+        </ul>
+
+        <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+
+        <ul class="header-nav__social">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-behance"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+          </li>
+        </ul>
+
+      </div> <!-- end header-nav__content -->
+
+    </nav> <!-- end header-nav -->
+
+    <a class="header-menu-toggle" href="#0">
+      <span class="header-menu-text">Menu</span>
+      <span class="header-menu-icon"></span>
+    </a>
+
+  </header> <!-- end s-header -->
+
+
+  <!-- home
+    ================================================== -->
+  <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+
+    <div class="home-content">
+
+      <div class="row home-content__main">
+
+        <h3>Metro Web Services</h3>
+
+        <h1>
+          Consumo de servicio web de Metro<br>
+          con api SOAP y REST <br>
+        </h1>
+
+        <div class="home-content__buttons">
+          <a href="#contact" class="smoothscroll btn btn--stroke">
+            Start a Project
+          </a>
+          <a href="#about" class="smoothscroll btn btn--stroke">
+            More About Us
+          </a>
+        </div>
+
+      </div>
+
+      <div class="home-content__scroll">
+        <a href="#about" class="scroll-link smoothscroll">
+          <span>Scroll Down</span>
+        </a>
+      </div>
+
+      <div class="home-content__line"></div>
+
+    </div> <!-- end home-content -->
+
+
+    <ul class="home-social">
+      <li>
+        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+      </li>
+      <li>
+        <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+      </li>
+      <li>
+        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+      </li>
+      <li>
+        <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+      </li>
+      <li>
+        <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+      </li>
+    </ul>
+    <!-- end home-social -->
+
+  </section> <!-- end s-home -->
+
+  <!-- services
+    ================================================== -->
+  <section id='services' class="s-services">
+
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <div class="col-full">
+        <h3 class="subhead">Servicios Admitidos</h3>
+        <h1 class="display-2">Listado de servicios</h1>
+      </div>
+    </div> <!-- end section-header -->
+
+    <div class="row services-list block-1-2 block-tab-full">
+
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="fa fa-train"></i>
+        </div>
+        <div class="service-text">
+          <h3 class="h2">Lineas De Metro</h3>
+          <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+            Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+            Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="fa fa-ticket"></i>
+        </div>
+        <div class="service-text">
+          <h3 class="h2">Comprar Ticket</h3>
+          <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+            Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+            Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-block service-item" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="fa fa-users"></i>
+        </div>
+        <div class="service-text">
+          <h3 class="h2">Usuarios</h3>
+          <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+            Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+            Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+          </p>
+        </div>
+      </div>
+
+    </div> <!-- end services-list -->
+
+  </section> <!-- end s-services -->
+
+
+  <!-- about
+    ================================================== -->
+  <section id='LineaDeMetro' class="s-about">
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <div class="col-full">
+        <h1 class="display-1 display-1--ligh">Linea De Metro</h1>
+      </div>
+    </div> <!-- end section-header -->
+
+    <div class="wrap">
+      <ul class="tabs">
+        <li><a class="smoothscroll" href="#tab1"><span class="fa fa-plus"></span><span class="tab-text">Agregrar Linea De Metro</span></a></li>
+        <li><a class="smoothscroll" href="#tab2"><span class="fa fa-eye"></span><span class="tab-text">Mostrar Linea de Metro</span></a></li>
+        <li><a class="smoothscroll" href="#tab3"><span class="fa fa-eye"></span><span class="tab-text">Mostrar todas las Lineas De Metro</span></a></li>
+        <li><a class="smoothscroll" href="#tab4"><span class="fa fa-pencil"></span><span class="tab-text">Actualizar Linea De Metro</span></a></li>
+        <li><a class="smoothscroll" href="#tab5"><span class="fa fa-trash"></span><span class="tab-text">Eliminar Linea De Metro</span></a></li>
+      </ul>
+
+      <div class="secciones">
+        <article id="tab1">
+          <h1>Agregar Linea De Metro</h1>
+          <div class="row forms" data-aos="fade-up">
+
+            <div class="contact-primary">
+
+              <h3 class="h1">Agrega una nueva Linea</h3>
+
+              <form name="contactForm" id="addLinea" method="POST">
+                <input name="NombreLinea" type="text" id="NombreLinea" placeholder="Nombre de la Linea" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="Origen" type="text" id="Origen" placeholder="Origen" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="Destino" type="text" id="Destino" placeholder="Destino" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="Horario" type="text" id="Horario" placeholder="Horario" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="Precio" type="number" id="Precio" placeholder="Precio" value="" minlength="2" required aria-required="true" class="full-width">
+                <button class="full-width btn--primary" href="javascript:;" onclick="validarLinea();">Agregar</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarLinea() {
+              var NombreLinea, Origen, Destino, Horario, Precio;
+
+              NombreLinea = document.getElementById('NombreLinea').value;
+              Origen = document.getElementById('Origen').value;
+              Destino = document.getElementById('Destino').value;
+              Horario = document.getElementById('Horario').value;
+              Precio = document.getElementById('Precio').value;
+
+              if (NombreLinea === "" || Origen === "" || Destino === "" || Horario === "" | Precio === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionAgregarLinea(NombreLinea, Origen, Destino, Horario, Precio);
+              }
+            }
+
+
+            function funcionAgregarLinea(a, b, c, d, e) {
+              onclick = "return validarLinea();"
+              var parametros = {
+                "NombreLinea": a,
+                "Origen": b,
+                "Destino": c,
+                "Horario": d,
+                "Precio": e
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/agregarLinea.php',
+                type: 'post',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+              return false;
+            }
+          </script>
+        </article>
+        <article id="tab2">
+          <div id="appLineasMetro">
+            <h1>Mostrar Linea del Metro</h1>
+            <div class="row forms" data-aos="fade-up">
+
+              <div class="contact-primary">
+
+                <h3 class="h1">Mostrar una Linea De Metro</h3>
+
+                <form id="viewLinea" method="GET" novalidate="novalidate">
+                  <input type="text" v-model="NombreLineaView" placeholder="Nombre de la Linea" value="" minlength="2" required aria-required="true" class="full-width">
+                  <!--<input class="full-width btn--primary" type="button" name="" href="javascript:;"  onclick="funcionAgregarLinea($('#NombreLinea').val(), $('#Origen').val(), $('#Destino').val(), $('#Horario').val(), $('#Precio').val());" value="Agregar">-->
+                  <button class="full-width btn--primary" v-on:click="leerApiLineas">Buscar</button>
+                  <input type="reset" class="full-width btn--primary" value="Limpiar Campo">
+                </form>
+              </div> <!-- end contact-primary -->
+            </div>
+            <div class="">
+              <table class="table-responsive">
+                <thead>
+                  <tr>
+                    <th>Nombre de la Linea</th>
+                    <th>Origen</th>
+                    <th>Destino</th>
+                    <th>Horario</th>
+                    <th>Precio$</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>{{lineas.nombreLinea}}</b></td>
+                    <td>{{lineas.origen}}</td>
+                    <td>{{lineas.destino}}</td>
+                    <td>{{lineas.horario}}</td>
+                    <td>{{lineas.precio}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <script>
+            new Vue({
+              el: '#appLineasMetro',
+              data() {
+                return {
+                  lineas: [],
+                  NombreLineaView: ""
+                }
+              },
+              methods: {
+                leerApiLineas() {
+                  axios.get('https://cors-anywhere.herokuapp.com/http://34.204.7.251:8080/RestLinea/findLinea/' + this.NombreLineaView).then(response => this.lineas = response.data).catch(error => console.log(error));
+                }
+              }
+            })
+          </script>
+
+        </article>
+        <article id="tab3">
+          <h1>Mostrar todas Las Lineas de Metro</h1>
+          <div class="">
+            <table id="app" class="table-responsive">
+              <thead>
+                <tr>
+                  <th>Nombre de la Linea</th>
+                  <th>Origen</th>
+                  <th>Destino</th>
+                  <th>Horario</th>
+                  <th>Precio$</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="linea in lineas">
+                  <td>{{linea.nombreLinea}}</td>
+                  <td>{{linea.origen}}</td>
+                  <td>{{linea.destino}}</td>
+                  <td>{{linea.horario}}</td>
+                  <td>{{linea.precio}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <script>
+            new Vue({
+              el: '#app',
+              data() {
+                return {
+                  lineas: []
+                }
+              },
+              methods: {
+                leerApi() {
+                  axios.get('https://cors-anywhere.herokuapp.com/http://34.204.7.251:8080/RestLinea/LineasMetro').then(response => this.lineas = response.data);
+                }
+              },
+              created() {
+                this.leerApi()
+              }
+            })
+          </script>
+
+        </article>
+        <article id="tab4">
+          <h1>Actualizar Linea de Metro</h1>
+          <div class="row forms" data-aos="fade-up">
+
+            <div class="contact-primary">
+
+              <h3 class="h1">Actualiza una Linea De Metro</h3>
+
+              <form name="contactForm" id="updateLinea" method="GET">
+                <input name="NombreLineaUpdate" type="text" id="NombreLineaUpdate" placeholder="Nombre de la Linea" value="" minlength="2" required="" aria-required="true" class="full-width">
+                <input name="OrigenUpdate" type="text" id="OrigenUpdate" placeholder="Origen" value="" minlength="2" aria-required="true" class="full-width">
+                <input name="DestinoUpdate" type="text" id="DestinoUpdate" placeholder="Destino" value="" minlength="2" aria-required="true" class="full-width">
+                <input name="HorarioUpdate" type="text" id="HorarioUpdate" placeholder="Horario" value="" minlength="2" aria-required="true" class="full-width">
+                <input name="PrecioUpdate" type="number" id="PrecioUpdate" placeholder="Precio" value="" minlength="2" aria-required="true" class="full-width">
+                <button class="full-width btn--primary" onclick="return validarUpdateLinea();">Actualizar</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarUpdateLinea() {
+              var NombreLineaUpdate, OrigenUpdate, DestinoUpdate, HorarioUpdate, PrecioUpdate;
+
+              NombreLineaUpdate = document.getElementById('NombreLineaUpdate').value;
+              OrigenUpdate = document.getElementById('OrigenUpdate').value;
+              DestinoUpdate = document.getElementById('DestinoUpdate').value;
+              HorarioUpdate = document.getElementById('HorarioUpdate').value;
+              PrecioUpdate = document.getElementById('PrecioUpdate').value;
+
+              if (NombreLineaUpdate === "" || OrigenUpdate === "" || DestinoUpdate === "" || HorarioUpdate === "" | PrecioUpdate === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionActualizarLinea(NombreLineaUpdate, OrigenUpdate, DestinoUpdate, HorarioUpdate, PrecioUpdate);
+              }
+            }
+
+            function funcionActualizarLinea(a, b, c, d, e) {
+              var parametros = {
+                "NombreLineaUpdate": a,
+                "OrigenUpdate": b,
+                "DestinoUpdate": c,
+                "HorarioUpdate": d,
+                "PrecioUpdate": e
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/ActualizarLinea.php',
+                type: 'get',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+            }
+          </script>
+        </article>
+        <article id="tab5">
+          <h1>Eliminar Linea de Metro</h1>
+          <div class="row forms" data-aos="fade-up">
+            <div class="contact-primary">
+
+              <h3 class="h1">Elimina una Linea De Metro</h3>
+
+              <form name="contactForm" id="deleteLinea" method="GET">
+                <input name="NombreLineaDelete" type="text" id="NombreLineaDelete" placeholder="Nombre de la Linea" value="" minlength="2" required aria-required="true" class="full-width">
+                <button class="full-width btn--primary" onclick="validarDeleteLinea();">Eliminar</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarDeleteLinea() {
+              var NombreLinea;
+
+              NombreLinea = document.getElementById('NombreLineaDelete').value;
+
+              if (NombreLinea === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionEliminarLinea(NombreLinea);
+              }
+            }
+
+            function funcionEliminarLinea(a) {
+              var parametros = {
+                "NombreLineaDelete": a,
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/eliminarLinea.php',
+                type: 'get',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+            }
+          </script>
+        </article>
+      </div>
+    </div>
+
+
+  </section> <!-- end s-about -->
+
+  <!-- services================================================== -->
+  <section id='Compras' class="s-services">
+
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <div class="col-full">
+        <h1 class="display-2">Compra de Tickets</h1>
+      </div>
+    </div> <!-- end section-header -->
+
+    <div class="wrap">
+      <ul class="tabs">
+        <li><a class="smoothscroll" href="#tabCompra1"><span class="fa fa-plus"></span><span class="tab-text">Realizar Una Compra</span></a></li>
+        <li><a class="smoothscroll" href="#tabCompra2"><span class="fa fa-eye"></span><span class="tab-text">Mostrar compra</span></a></li>
+        <li><a class="smoothscroll" href="#tabCompra3"><span class="fa fa-eye"></span><span class="tab-text">Mostrar todas las Compras</span></a></li>
+        <li><a class="smoothscroll" href="#tabCompra4"><span class="fa fa-pencil"></span><span class="tab-text">Actualizar Compra</span></a></li>
+        <li><a class="smoothscroll" href="#tabCompra5"><span class="fa fa-trash"></span><span class="tab-text">Eliminar Compra</span></a></li>
+      </ul>
+
+      <div class="secciones">
+        <article id="tabCompra1">
+          <h1>Realizar una Compra</h1>
+          <div class="row forms" data-aos="fade-up">
+            <div class="contact-primary">
+
+              <h3 class="h1">Realiza una Compra</h3>
+
+              <form name="contactForm" id="addCompra" method="GET">
+                <input name="Compra" type="text" id="Compra" placeholder="Nombre de la Compra" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="UsuarioCompra" type="text" id="UsuarioCompra" placeholder="Usuario" value="" minlength="2" required aria-required="true" class="full-width">
+                <select class="full-width mdb-select md-form" name="TypeVagon" id="TypeVagon" required>
+                  <option value="VIP">VIP</option>
+                  <option value="Turista">Turista</option>
+                </select>
+                <input name="OrigenCompra" type="text" id="OrigenCompra" placeholder="Origen" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="NombreLineaCompra" type="text" id="NombreLineaCompra" placeholder="Nombre de la Linea" value="" minlength="2" required aria-required="true" class="full-width">
+                <select class="full-width mdb-select md-form" name="TypePagoCompra" id="TypePagoCompra" required>
+                  <option value="Credito">Credito</option>
+                  <option value="Efectivo">Efectivo</option>
+                </select>
+                <input name="FechaCompra" type="date" id="FechaCompra" placeholder="Fecha" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="PrecioCompra" type="text" id="PrecioCompra" placeholder="Precio" value="" minlength="2" required aria-required="true" class="full-width">
+                <button class="full-width btn--primary" onclick="validarCompra();">Realizar Compra</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarCompra() {
+              var Compra, UsuarioCompra, TypeVagon, OrigenCompra, NombreLineaCompra, TypePagoCompra, FechaCompra, PrecioCompra;
+
+              Compra = document.getElementById('Compra').value;
+              UsuarioCompra = document.getElementById('UsuarioCompra').value;
+              TypeVagon = document.getElementById('TypeVagon').value;
+              OrigenCompra = document.getElementById('OrigenCompra').value;
+              NombreLineaCompra = document.getElementById('NombreLineaCompra').value;
+              TypePagoCompra = document.getElementById('TypePagoCompra').value;
+              FechaCompra = document.getElementById('FechaCompra').value;
+              PrecioCompra = document.getElementById('PrecioCompra').value;
+
+              if (Compra === "" || UsuarioCompra === "" || TypeVagon === "" || OrigenCompra === "" || NombreLineaCompra === "" || TypePagoCompra === "" || FechaCompra === "" || PrecioCompra === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionRealizarCompra(Compra, UsuarioCompra, TypeVagon, OrigenCompra, NombreLineaCompra, TypePagoCompra, FechaCompra, PrecioCompra)
+              }
+            }
+
+            function funcionRealizarCompra(a, b, c, d, e, f, g, h) {
+              var parametros = {
+                "Compra": a,
+                "UsuarioCompra": b,
+                "TypeVagon": c,
+                "OrigenCompra": d,
+                "NombreLineaCompra": e,
+                "TypePagoCompra": f,
+                "FechaCompra": g,
+                "PrecioCompra": h
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/realizarCompra.php',
+                type: 'get',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+            }
+          </script>
+
+        </article>
+        <article id="tabCompra2">
+          <div id="TableCompraView">
+            <h1>Buscar una Compra</h1>
+            <div class="row forms" data-aos="fade-up">
+
+              <div class="contact-primary">
+
+                <h3 class="h1">Busca Una Compra</h3>
+
+                <form name="contactForm" id="viewCompra" method="GET" novalidate="novalidate">
+                  <input type="text" v-model="NombreCompraView" placeholder="Nombre de la Compra" value="" minlength="2" required aria-required="true" class="full-width">
+                  <button class="full-width btn--primary" v-on:click="leerApiCompras">Buscar</button>
+                  <input type="reset" class="full-width btn--primary" value="Limpiar Campo">
+                </form>
+              </div> <!-- end contact-primary -->
+            </div>
+
+            <div>
+              <table class="table-responsive">
+                <thead>
+                  <tr>
+                    <th>Nombre de la Compra</th>
+                    <th>Usuario</th>
+                    <th>Tipo de Vagon</th>
+                    <th>Origen</th>
+                    <th>Nombre de la Linea</th>
+                    <th>Tipo de Pago</th>
+                    <th>Fecha</th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>{{compras.compra}}</b></td>
+                    <td>{{compras.usuario}}</td>
+                    <td>{{compras.typeVagon}}</td>
+                    <td>{{compras.origen}}</td>
+                    <td>{{compras.nombreLinea}}</td>
+                    <td>{{compras.typePago}}</td>
+                    <td>{{compras.fecha}}</td>
+                    <td>{{compras.precio}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <script>
+            new Vue({
+              el: '#TableCompraView',
+              data() {
+                return {
+                  compras: [],
+                  NombreCompraView: ""
+                }
+              },
+              methods: {
+                leerApiCompras() {
+                  axios.get('https://cors-anywhere.herokuapp.com/http://34.204.7.251:8080/RestCompras/findCompra/'+this.NombreCompraView).then(response => this.compras = response.data);
+                }
+              }
+            })
+          </script>
+        </article>
+        <article id="tabCompra3">
+          <h1>Mostrar Todas las Compras</h1>
+          <div class="">
+            <table id="TableCompras" class="table-responsive">
+              <thead>
+                <tr>
+                  <th>Nombre de la Compra</th>
+                  <th>Usuario</th>
+                  <th>Tipo de Vagon</th>
+                  <th>Origen</th>
+                  <th>Nombre de la Linea</th>
+                  <th>Tipo de Pago</th>
+                  <th>Fecha</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="Compra in Compras">
+                  <td>{{Compra.compra}}</td>
+                  <td>{{Compra.usuario}}</td>
+                  <td>{{Compra.typeVagon}}</td>
+                  <td>{{Compra.origen}}</td>
+                  <td>{{Compra.nombreLinea}}</td>
+                  <td>{{Compra.typePago}}</td>
+                  <td>{{Compra.fecha}}</td>
+                  <td>{{Compra.precio}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <script>
+            new Vue({
+              el: '#TableCompras',
+              data() {
+                return {
+                  Compras: []
+                }
+              },
+              methods: {
+                leerApi() {
+                  axios.get('https://cors-anywhere.herokuapp.com/http://34.204.7.251:8080/RestCompras/Compras').then(response => this.Compras = response.data);
+                }
+              },
+              created() {
+                this.leerApi()
+              }
+            })
+          </script>
+        </article>
+        <article id="tabCompra4">
+          <h1>Actualizar Compra</h1>
+          <div class="row forms" data-aos="fade-up">
+            <div class="contact-primary">
+
+              <h3 class="h1">Actualizar Compra</h3>
+
+              <form name="contactForm" id="updateCompra" method="GET">
+                <input name="CompraUpdate" type="text" id="CompraUpdate" placeholder="Nombre de la Compra" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="UsuarioCompraUpdate" type="text" id="UsuarioCompraUpdate" placeholder="Usuario" value="" minlength="2" required aria-required="true" class="full-width">
+                <select class="full-width mdb-select md-form" name="TypeVagonUpdate" id="TypeVagonUpdate" required>
+                  <option value="VIP">VIP</option>
+                  <option value="Turista">Turista</option>
+                </select>
+                <input name="OrigenCompraUpdate" type="text" id="OrigenCompraUpdate" placeholder="Origen" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="NombreLineaCompraUpdate" type="text" id="NombreLineaCompraUpdate" placeholder="Nombre de la Linea" value="" minlength="2" required aria-required="true" class="full-width">
+                <select class="full-width mdb-select md-form" name="TypePagoCompraUpdate" id="TypePagoCompraUpdate" required>
+                  <option value="Credito">Credito</option>
+                  <option value="Efectivo">Efectivo</option>
+                </select>
+                <input name="FechaCompraUpdate" type="date" id="FechaCompraUpdate" placeholder="Fecha" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="PrecioCompraUpdate" type="text" id="PrecioCompraUpdate" placeholder="Precio" value="" minlength="2" required aria-required="true" class="full-width">
+                <button class="full-width btn--primary" onclick="validarCompraUpdate();">Realizar Compra</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarCompraUpdate() {
+              var CompraUpdate, UsuarioCompraUpdate, TypeVagonUpdate, OrigenCompraUpdate, NombreLineaCompraUpdate, TypePagoCompraUpdate, FechaCompraUpdate, PrecioCompraUpdate;
+
+              CompraUpdate = document.getElementById('CompraUpdate').value;
+              UsuarioCompraUpdate = document.getElementById('UsuarioCompraUpdate').value;
+              TypeVagonUpdate = document.getElementById('TypeVagonUpdate').value;
+              OrigenCompraUpdate = document.getElementById('OrigenCompraUpdate').value;
+              NombreLineaCompraUpdate = document.getElementById('NombreLineaCompraUpdate').value;
+              TypePagoCompraUpdate = document.getElementById('TypePagoCompraUpdate').value;
+              FechaCompraUpdate = document.getElementById('FechaCompraUpdate').value;
+              PrecioCompraUpdate = document.getElementById('PrecioCompraUpdate').value;
+
+              if (CompraUpdate === "" || UsuarioCompraUpdate === "" || TypeVagonUpdate === "" || OrigenCompraUpdate === "" || NombreLineaCompraUpdate === "" || TypePagoCompraUpdate === "" || FechaCompraUpdate === "" || PrecioCompraUpdate === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionActualizarCompra(CompraUpdate, UsuarioCompraUpdate, TypeVagonUpdate, OrigenCompraUpdate, NombreLineaCompraUpdate, TypePagoCompraUpdate, FechaCompraUpdate, PrecioCompraUpdate)
+              }
+            }
+
+            function funcionActualizarCompra(a, b, c, d, e, f, g, h) {
+              var parametros = {
+                "CompraUpdate": a,
+                "UsuarioCompraUpdate": b,
+                "TypeVagonUpdate": c,
+                "OrigenCompraUpdate": d,
+                "NombreLineaCompraUpdate": e,
+                "TypePagoCompraUpdate": f,
+                "FechaCompraUpdate": g,
+                "PrecioCompraUpdate": h
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/actualizarCompra.php',
+                type: 'get',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+            }
+          </script>
+
+        </article>
+        <article id="tabCompra5">
+          <h1>Cancelar Compra</h1>
+          <div class="row forms" data-aos="fade-up">
+            <div class="contact-primary">
+
+              <h3 class="h1">Cancelar Compra</h3>
+
+              <form name="contactForm" id="deleteCompra" method="GET">
+                <input name="Cancelacion" type="text" id="Cancelacion" placeholder="Nombre de la Compra" value="" minlength="2" required aria-required="true" class="full-width">
+                <button class="full-width btn--primary" onclick="validarCompraCancelar();">Cancelar Compra</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarCompraCancelar() {
+              var Cancelacion;
+
+              Cancelacion = document.getElementById('Cancelacion').value;
+
+              if (Cancelacion === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionCancelarCompra(Cancelacion);
+              }
+            }
+
+            function funcionCancelarCompra(a) {
+              var parametros = {
+                "Cancelacion": a
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/cancelarCompra.php',
+                type: 'get',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+            }
+          </script>
+
+        </article>
+
+      </div>
+
+
+
+  </section> <!-- end s-services -->
+
+
+  <section id='Usuarios' class="s-about">
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+      <div class="col-full">
+        <h1 class="display-1 display-1--ligh">Usuarios</h1>
+      </div>
+    </div> <!-- end section-header -->
+
+    <div class="wrap">
+      <ul class="tabs">
+        <li><a class="smoothscroll" href="#tabUsuario1"><span class="fa fa-plus"></span><span class="tab-text">Registrar un Usuario</span></a></li>
+        <li><a class="smoothscroll" href="#tabUsuario2"><span class="fa fa-eye"></span><span class="tab-text">Buscar un Usuario</span></a></li>
+        <li><a class="smoothscroll" href="#tabUsuario3"><span class="fa fa-eye"></span><span class="tab-text">Mostrar todos los Usuarios</span></a></li>
+        <li><a class="smoothscroll" href="#tabUsuario4"><span class="fa fa-pencil"></span><span class="tab-text">Actualizar Usuario</span></a></li>
+        <li><a class="smoothscroll" href="#tabUsuario5"><span class="fa fa-trash"></span><span class="tab-text">Eliminar Usuario</span></a></li>
+      </ul>
+
+      <div class="secciones">
+        <article id="tabUsuario1">
+          <h1>Registrar Nuevo Usuario</h1>
+          <div class="row forms" data-aos="fade-up">
+            <div class="contact-primary">
+
+              <h3 class="h1">Registrar Nuevo Usuario</h3>
+
+              <form name="contactForm" id="addUser" method="GET">
+                <input name="NombreUsuario" type="text" id="NombreUsuario" placeholder="Nombre Completo" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="FechaDeNacimiento" type="date" id="FechaDeNacimiento" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="Correo" type="text" id="Correo" placeholder="Correo" value="" minlength="2" required aria-required="true" class="full-width">
+                <select class="full-width mdb-select md-form" name="MetodoPagoUsuario" id="MetodoPagoUsuario" required>
+                  <option value="Credito">Credito</option>
+                  <option value="Efectivo">Efectivo</option>
+                </select>
+                <input name="NumeroTarjeta" type="text" id="NumeroTarjeta" placeholder="Numero de tarjeta" value="" minlength="2" required aria-required="true" class="full-width">
+                <button class="full-width btn--primary" onclick="validarUsuario();">Registrar</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarUsuario() {
+              var NombreUsuario, FechaDeNacimiento, Correo, MetodoPago, NumeroTarjeta;
+
+              NombreUsuario = document.getElementById('NombreUsuario').value;
+              FechaDeNacimiento = document.getElementById('FechaDeNacimiento').value;
+              Correo = document.getElementById('Correo').value;
+              MetodoPago = document.getElementById('MetodoPagoUsuario').value;
+              NumeroTarjeta = document.getElementById('NumeroTarjeta').value;
+
+              if (NombreUsuario === "" || FechaDeNacimiento === "" || Correo === "" || MetodoPago === "" || NumeroTarjeta === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionRegistrarUsuario(NombreUsuario, FechaDeNacimiento, Correo, MetodoPago, NumeroTarjeta);
+              }
+            }
+
+            function funcionRegistrarUsuario(a) {
+              var parametros = {
+                "Cancelacion": a
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/registrarUsuario.php',
+                type: 'get',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+            }
+          </script>
+
+        </article>
+        <article id="tabUsuario2">
+          <div id="TableUsuariosView" >
+            <h1>Buscar una Compra</h1>
+            <div class="row forms" data-aos="fade-up">
+
+              <div class="contact-primary">
+
+                <h3 class="h1">Busca Una Compra</h3>
+
+                <form name="contactForm" id="viewUsuario" method="GET" novalidate="novalidate">
+                  <input type="text" v-model="NombreUsuarioView" placeholder="Nombre del Usuario" value="" minlength="2" required aria-required="true" class="full-width">
+                  <button class="full-width btn--primary" v-on:click="leerApiUsuario">Buscar</button>
+                  <input type="reset" class="full-width btn--primary" value="Limpiar Campo">
+                </form>
+              </div> <!-- end contact-primary -->
+            </div>
+
+            <div class="">
+              <table class="table-responsive">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Correo</th>
+                    <th>Metodo de Pago</th>
+                    <th>Numero de Tarjeta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{Usuarios.nombreUsuario}}</td>
+                    <td>{{Usuarios.fechaDeNacimiento}}</td>
+                    <td>{{Usuarios.correo}}</td>
+                    <td>{{Usuarios.metodoPago}}</td>
+                    <td>{{Usuarios.numeroTarjeta}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <script>
+            new Vue({
+              el: '#TableUsuariosView',
+              data() {
+                return {
+                  Usuarios: [],
+                  NombreUsuarioView: ""
+                }
+              },
+              methods: {
+                leerApiUsuario() {
+                  axios.get('https://cors-anywhere.herokuapp.com/http://34.204.7.251:8080/RestUser/findUser/'+this.NombreUsuarioView).then(response => this.Usuarios = response.data);
+                }
+              }
+            })
+          </script>
+        </article>
+        <article id="tabUsuario3">
+          <h1>Mostrar Todas los Usuarios</h1>
+          <div class="">
+            <table id="TableUsuarios" class="table-responsive">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Fecha de Nacimiento</th>
+                  <th>Correo</th>
+                  <th>Metodo de Pago</th>
+                  <th>Numero de Tarjeta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="Usuario in Usuarios">
+                  <td>{{Usuario.nombreUsuario}}</td>
+                  <td>{{Usuario.fechaDeNacimiento}}</td>
+                  <td>{{Usuario.correo}}</td>
+                  <td>{{Usuario.metodoPago}}</td>
+                  <td>{{Usuario.numeroTarjeta}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <script>
+            new Vue({
+              el: '#TableUsuarios',
+              data() {
+                return {
+                  Usuarios: []
+                }
+              },
+              methods: {
+                leerApi() {
+                  axios.get('https://cors-anywhere.herokuapp.com/http://34.204.7.251:8080/RestUser/Usuarios').then(response => this.Usuarios = response.data);
+                }
+              },
+              created() {
+                this.leerApi()
+              }
+            })
+          </script>
+        </article>
+        <article id="tabUsuario4">
+          <h1>Actualizar Usuario</h1>
+          <div class="row forms" data-aos="fade-up">
+            <div class="contact-primary">
+
+              <h3 class="h1">Actualizar Usuario</h3>
+
+              <form name="contactForm" id="updateUser" method="GET">
+                <input name="NombreUsuarioUpdate" type="text" id="NombreUsuarioUpdate" placeholder="Nombre Completo" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="FechaDeNacimientoUpdate" type="date" id="FechaDeNacimientoUpdate" value="" minlength="2" required aria-required="true" class="full-width">
+                <input name="CorreoUpdate" type="text" id="CorreoUpdate" placeholder="Correo" value="" minlength="2" required aria-required="true" class="full-width">
+                <select class="full-width mdb-select md-form" name="MetodoPagoUsuarioUpdate" id="MetodoPagoUsuarioUpdate" required>
+                  <option value="Credito">Credito</option>
+                  <option value="Efectivo">Efectivo</option>
+                </select>
+                <input name="NumeroTarjetaUpdate" type="text" id="NumeroTarjetaUpdate" placeholder="Numero de tarjeta" value="" minlength="2" required aria-required="true" class="full-width">
+                <button class="full-width btn--primary" onclick="validarUsuarioUpdate();">Actualizar</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarUsuarioUpdate() {
+              var NombreUsuarioUpdate, FechaDeNacimientoUpdate, CorreoUpdate, MetodoPagoUsuarioUpdate, NumeroTarjetaUpdate;
+
+              NombreUsuarioUpdate = document.getElementById('NombreUsuarioUpdate').value;
+              FechaDeNacimientoUpdate = document.getElementById('FechaDeNacimientoUpdate').value;
+              CorreoUpdate = document.getElementById('CorreoUpdate').value;
+              MetodoPagoUsuarioUpdate = document.getElementById('MetodoPagoUsuarioUpdate').value;
+              NumeroTarjetaUpdate = document.getElementById('NumeroTarjetaUpdate').value;
+
+              if (NombreUsuarioUpdate === "" || FechaDeNacimientoUpdate === "" || CorreoUpdate === "" || MetodoPagoUpdate === "" || NumeroTarjetaUpdate === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionActualizarUsuario(NombreUsuarioUpdate, FechaDeNacimientoUpdate, CorreoUpdate, MetodoPagoUsuarioUpdate, NumeroTarjetaUpdate);
+              }
+            }
+
+            function funcionActualizarUsuario(a, b, c, d, e) {
+              var parametros = {
+                "NombreUsuarioUpdate": a,
+                "FechaDeNacimientoUpdate": b,
+                "CorreoUpdate": c,
+                "MetodoPagoUsuarioUpdate": d,
+                "NumeroTarjetaUpdate": e
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/actualizarUsuario.php',
+                type: 'get',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+            }
+          </script>
+        </article>
+        <article id="tabUsuario5">
+          <h1>Eliminar Usuario</h1>
+          <div class="row forms" data-aos="fade-up">
+            <div class="contact-primary">
+
+              <h3 class="h1">Eliminar un Usuario</h3>
+
+              <form name="contactForm" id="deleteUser" method="GET">
+                <input name="NombreUsuarioDelete" type="text" id="NombreUsuarioDelete" placeholder="Nombre Completo" value="" minlength="2" required aria-required="true" class="full-width">
+                <button class="full-width btn--primary" onclick="validarUsuarioDelete();">Eliminar</button>
+                <input type="reset" class="full-width btn--primary" value="Limpiar Campos">
+              </form>
+            </div> <!-- end contact-primary -->
+          </div>
+          <script>
+            function validarUsuarioDelete() {
+              var NombreUsuarioDelete;
+
+              NombreUsuarioDelete = document.getElementById('NombreUsuarioDelete').value;
+
+              if (NombreUsuarioDelete === "") {
+                Swal.fire({
+                  title: "Completa los Campos",
+                  text: "Todos los campos son Obligatorios",
+                  icon: 'info',
+                  timer: 10000,
+                  timerProgressBar: true
+                });
+                return false;
+              } else {
+                funcionEliminarUsuario(NombreUsuarioDelete);
+              }
+            }
+
+            function funcionEliminarUsuario(a) {
+              var parametros = {
+                "NombreUsuarioDelete": a
+              };
+              $.ajax({
+                data: parametros,
+                url: 'phpSoap/eliminarUsuario.php',
+                type: 'get',
+                success: function(response) {
+                  Swal.fire({
+                    title: response,
+                    //text: response,
+                    icon: 'info',
+                    timer: 10000,
+                    timerProgressBar: true
+                  });
+                }
+              });
+            }
+          </script>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- works
+    ================================================== -->
+  <section id='works' class="s-works">
+
+    <div class="intro-wrap">
+
+      <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+        <div class="col-full">
+          <h3 class="subhead">Servicio de Metro</h3>
+          <!--<h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>-->
+        </div>
+      </div> <!-- end section-header -->
+
+    </div> <!-- end intro-wrap -->
+
+    <div class="row works-content">
+      <div class="col-full masonry-wrap">
+        <div class="masonry">
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+
+              <div class="item-folio__thumb">
+                <a href="images/portfolio/gallery/plano.png" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                  <img src="images/portfolio/plano.png" srcset="images/portfolio/plano.png 1x, images/portfolio/plano@2x.png 2x" alt="">
+                </a>
+              </div>
+
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">
+                  Mapa de Metro
+                </h3>
+                <p class="item-folio__cat">
+                  CDMX
+                </p>
+              </div>
+
+              <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                <i class="icon-link"></i>
+              </a>
+
+              <div class="item-folio__caption">
+                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+              </div>
+
+            </div>
+          </div> <!-- end masonry__brick -->
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+
+              <div class="item-folio__thumb">
+                <a href="images/portfolio/gallery/metrocdmx.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                  <img src="images/portfolio/metrocdmx.jpg" srcset="images/portfolio/metrocdmx.jpg 1x, images/portfolio/metrocdmx.jpg 2x" alt="">
+                </a>
+              </div>
+
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">
+                  Woodcraft
+                </h3>
+                <p class="item-folio__cat">
+                  Web Design
+                </p>
+              </div>
+
+              <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                <i class="icon-link"></i>
+              </a>
+
+              <div class="item-folio__caption">
+                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+              </div>
+
+            </div>
+          </div> <!-- end masonry__brick -->
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+
+              <div class="item-folio__thumb">
+                <a href="images/portfolio/gallery/metro.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                  <img src="images/portfolio/metro.jpg" srcset="images/portfolio/metro.jpg 1x, images/portfolio/metro.jpg 2x" alt="">
+                </a>
+              </div>
+
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">
+                  The Beetle
+                </h3>
+                <p class="item-folio__cat">
+                  Web Development
+                </p>
+              </div>
+
+              <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                <i class="icon-link"></i>
+              </a>
+
+              <div class="item-folio__caption">
+                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+              </div>
+
+            </div>
+          </div> <!-- end masonry__brick -->
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+
+              <div class="item-folio__thumb">
+                <a href="images/portfolio/gallery/Vagon.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                  <img src="images/portfolio/Vagon.jpg" srcset="images/portfolio/Vagon.jpg 1x, images/portfolio/Vagon.jpg 2x" alt="">
+                </a>
+              </div>
+
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">
+                  Grow Green
+                </h3>
+                <p class="item-folio__cat">
+                  Branding
+                </p>
+              </div>
+
+              <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                <i class="icon-link"></i>
+              </a>
+
+              <div class="item-folio__caption">
+                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+              </div>
+
+            </div>
+          </div> <!-- end masonry__brick -->
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+
+              <div class="item-folio__thumb">
+                <a href="images/portfolio/gallery/metro-l5.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
+                  <img src="images/portfolio/metro-l5.jpg" srcset="images/portfolio/metro-l5.jpg 1x, images/portfolio/metro-l5 2x" alt="">
+                </a>
+              </div>
+
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">
+                  Guitarist
+                </h3>
+                <p class="item-folio__cat">
+                  Web Design
+                </p>
+              </div>
+
+              <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                <i class="icon-link"></i>
+              </a>
+
+              <div class="item-folio__caption">
+                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+              </div>
+
+            </div>
+          </div> <!-- end masonry__brick -->
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+
+              <div class="item-folio__thumb">
+                <a href="images/portfolio/gallery/metro3.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
+                  <img src="images/portfolio/metro3.jpg" srcset="images/portfolio/metro3.jpg 1x, images/portfolio/metro3.jpg 2x" alt="">
+                </a>
+              </div>
+
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">
+                  Palmeira
+                </h3>
+                <p class="item-folio__cat">
+                  Web Design
+                </p>
+              </div>
+
+              <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                <i class="icon-link"></i>
+              </a>
+
+              <div class="item-folio__caption">
+                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+              </div>
+
+            </div>
+          </div> <!-- end masonry__brick -->
+
+        </div> <!-- end masonry -->
+      </div> <!-- end col-full -->
+    </div> <!-- end works-content -->
+
+  </section> <!-- end s-works -->
+
+
+
+  <!-- contact
+    ================================================== -->
+  <section id="contact" class="s-contact">
+
+    <div class="overlay"></div>
+    <div class="contact__line"></div>
+
+    <div class="row section-header" data-aos="fade-up">
+      <div class="col-full">
+        <h3 class="subhead">Contact Us</h3>
+        <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
+      </div>
+    </div>
+
+    <div class="row contact-content" data-aos="fade-up">
+
+      <div class="contact-primary">
+
+        <h3 class="h6">Send Us A Message</h3>
+
+        <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+          <fieldset>
+
+            <div class="form-field">
+              <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+            </div>
+            <div class="form-field">
+              <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+            </div>
+            <div class="form-field">
+              <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+            </div>
+            <div class="form-field">
+              <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+            </div>
+            <div class="form-field">
+              <button class="full-width btn--primary">Submit</button>
+              <div class="submit-loader">
+                <div class="text-loader">Sending...</div>
+                <div class="s-loader">
+                  <div class="bounce1"></div>
+                  <div class="bounce2"></div>
+                  <div class="bounce3"></div>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+
+        <!-- contact-warning -->
+        <div class="message-warning">
+          Something went wrong. Please try again.
+        </div>
+
+        <!-- contact-success -->
+        <div class="message-success">
+          Your message was sent, thank you!<br>
+        </div>
+
+      </div> <!-- end contact-primary -->
+
+      <div class="contact-secondary">
+        <div class="contact-info">
+
+          <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+          <div class="cinfo">
+            <h5>Where to Find Us</h5>
+            <p>
+              1600 Amphitheatre Parkway<br>
+              Mountain View, CA<br>
+              94043 US
+            </p>
+          </div>
+
+          <div class="cinfo">
+            <h5>Email Us At</h5>
+            <p>
+              contact@glintsite.com<br>
+              info@glintsite.com
+            </p>
+          </div>
+
+          <div class="cinfo">
+            <h5>Call Us At</h5>
+            <p>
+              Phone: (+63) 555 1212<br>
+              Mobile: (+63) 555 0100<br>
+              Fax: (+63) 555 0101
+            </p>
+          </div>
+
+          <ul class="contact-social">
+            <li>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            </li>
+          </ul> <!-- end contact-social -->
+
+        </div> <!-- end contact-info -->
+      </div> <!-- end contact-secondary -->
+
+    </div> <!-- end contact-content -->
+
+  </section> <!-- end s-contact -->
+
+
+  <!-- footer
+    ================================================== -->
+  <footer>
+
+    <div class="row footer-main">
+
+      <div class="col-six tab-full left footer-desc">
+
+        <div class="footer-logo"></div>
+        Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan
+        tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+
+      </div>
+
+      <div class="col-six tab-full right footer-subscribe">
+
+        <h4>Get Notified</h4>
+        <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+
+        <div class="subscribe-form">
+          <form id="mc-form" class="group" novalidate="true">
+            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+            <input type="submit" name="subscribe" value="Subscribe">
+            <label for="mc-email" class="subscribe-message"></label>
+          </form>
+        </div>
+
+      </div>
+
+    </div> <!-- end footer-main -->
+
+    <div class="row footer-bottom">
+
+      <div class="col-twelve">
+        <div class="copyright">
+          <span>© Copyright Glint 2017</span>
+          <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>
+        </div>
+
+        <div class="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+    </div> <!-- end footer-bottom -->
+
+  </footer> <!-- end footer -->
+
+
+  <!-- photoswipe background
+    ================================================== -->
+  <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs"
+            title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div> <!-- end photoSwipe background -->
+
+
+  <!-- preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader">
+      <div class="line-scale-pulse-out">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Java Script
+    ================================================== -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
