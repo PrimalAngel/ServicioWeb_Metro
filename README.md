@@ -4,11 +4,17 @@
 
 Servicio Web de Metro
 
-[LINK]: http://34.204.7.251:8080/ws/MetroV2_1.wsdl	"Link de Servicio"
+[http://34.204.7.251:8080/ws/MetroV2_1.wsdl](http://34.204.7.251:8080/ws/MetroV2_1.wsdl) "Link de Servicio Soap"
+
+[http://34.204.7.251:8080/RestLinea/LineasMetro](http://34.204.7.251:8080/RestLinea/LineasMetro) "Link Rest Líneas de Metro"
+
+[http://34.204.7.251/Metro/](http://34.204.7.251/Metro/)  "Link de Consumo de Servicio"
+
+
 
 ## Funcionalidades
 
-- [x] Realizar Compra
+- [ ] Realizar Compra
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -29,7 +35,7 @@ Servicio Web de Metro
 
   
 
-- [x] Actualizar Compra
+- [ ] Actualizar Compra
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -50,7 +56,7 @@ Servicio Web de Metro
 
   
 
-- [x] Mostrar Compra
+- [ ] Mostrar Compra
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -64,7 +70,7 @@ Servicio Web de Metro
 
   
 
-- [x] Cancelar Compra
+- [ ] Cancelar Compra
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -78,7 +84,7 @@ Servicio Web de Metro
 
   
 
-- [x] Registrar Usuario
+- [ ] Registrar Usuario
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -96,7 +102,7 @@ Servicio Web de Metro
 
   
 
-- [x] Actualizar Usuario
+- [ ] Actualizar Usuario
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -114,7 +120,7 @@ Servicio Web de Metro
 
   
 
-- [x] Eliminar Usuario
+- [ ] Eliminar Usuario
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -128,7 +134,7 @@ Servicio Web de Metro
 
   
 
-- [x] Agregar Línea de Metro
+- [ ] Agregar Línea de Metro
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -146,7 +152,7 @@ Servicio Web de Metro
 
   
 
-- [x] Actualizar Línea Metro
+- [ ] Actualizar Línea Metro
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -164,7 +170,7 @@ Servicio Web de Metro
 
   
 
-- [x] Mostrar Línea Metro
+- [ ] Mostrar Línea Metro
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -178,7 +184,7 @@ Servicio Web de Metro
 
   
 
-- [x] Eliminar Línea de Metro
+- [ ] Eliminar Línea de Metro
 
   ```xml
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -190,7 +196,41 @@ Servicio Web de Metro
   </Envelope>
   ```
 
+- [ ] Mostrar Lineas de Metro
 
+  ```xml
+  <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+      <Body>
+          <MostrarLineasRequest xmlns="http://www.uvMetro.me/MetroV2_1"/>
+      </Body>
+  </Envelope>
+  ```
+
+  
+
+- [ ] Mostrar Usuarios
+
+  ```xaml
+  <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+      <Body>
+          <MostrarUsuariosRequest xmlns="http://www.uvMetro.me/MetroV2_1"/>
+      </Body>
+  </Envelope>
+  ```
+
+  
+
+- [ ] Mostrar Compras
+
+  ```xml
+  <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+      <Body>
+          <MostrarComprasRequest xmlns="http://www.uvMetro.me/MetroV2_1"/>
+      </Body>
+  </Envelope>
+  ```
+
+  
 
 
 ## Mensajes
