@@ -6,7 +6,45 @@ Servicio Web de Metro
 
 [http://34.204.7.251:8080/ws/MetroV2_1.wsdl](http://34.204.7.251:8080/ws/MetroV2_1.wsdl) "Link de Servicio Soap"
 
-[http://34.204.7.251:8080/RestLinea/LineasMetro](http://34.204.7.251:8080/RestLinea/LineasMetro) "Link Rest Líneas de Metro"
+Link Servicio Rest
+
+[http://34.204.7.251:8080/RestLinea/LineasMetro](http://34.204.7.251:8080/RestLinea/LineasMetro) ""
+
+http://34.204.7.251:8080/RestCompras/findCompra/{Parametro}
+
+[http://34.204.7.251:8080/RestCompras/](http://34.204.7.251:8080/RestCompras/findCompra/)compras/
+
+[http://34.204.7.251:8080/RestCompras/saveCompra](http://34.204.7.251:8080/RestCompras/findCompra/)
+
+[http://34.204.7.251:8080/RestCompras](http://34.204.7.251:8080/RestCompras/findCompra/)/updateCompra
+
+[http://34.204.7.251:8080/RestCompras/](http://34.204.7.251:8080/RestCompras/findCompra/)eliminarCompra/{nombreCompa}
+
+​	----LineasDeMetro-----
+
+RestLinea/LineasMetro
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestLinea/saveLinea
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestLinea/updateLinea
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestLinea/findLinea/{nombreLinea}
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestLinea/eliminarLinea/{nombreLinea}
+
+---Usuarios---
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestUser/Usuarios
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestUser/saveUser
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestUser/updateUser
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestUser/findUser/{nombre usuario}
+
+[http://34.204.7.251:8080/](http://34.204.7.251:8080/RestCompras/findCompra/)RestUser/eliminarUsuario/{nombre Usuario}
+
+​	
 
 [http://34.204.7.251/Metro/](http://34.204.7.251/Metro/)  "Link de Consumo de Servicio"
 
